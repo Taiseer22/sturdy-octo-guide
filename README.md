@@ -1,29 +1,11 @@
-App.jsx// App.jsx
-const data = {
-  "images": {
-    "logo": "https://cdn.example.com/logo.png",
-    "background": "https://cdn.example.com/bg.jpg"
-  },
-  "videos": {
-    "intro": "https://cdn.example.com/intro.mp4"
-  }
-};
+# Create React App [![Build & Test](https://github.com/facebook/create-react-app/actions/workflows/build-and-test.yml/badge.svg?branch=main)](https://github.com/facebook/create-react-app/actions/workflows/build-and-test.yml) [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-green.svg)](https://github.com/facebook/create-react-app/blob/main/CONTRIBUTING.md)
 
-function App() {
-  return (
-    <div style={{ backgroundImage: `url(${data.images.background})` }}>
-      <img src={data.images.logo} alt="Logo" />
-      <h1>مرحباً بك في مشروعي</h1>
-      
-      <video width="600" controls>
-        <source src={data.videos.intro} type="video/mp4" />
-        متصفحك لا يدعم تشغيل الفيديو.
-      </video>
-      
-      <br />
-      <a href={data.documents.manual} target="_blank">تحميل الدليل (PDF)</a>
-    </div>
-  );
-}
+> [!CAUTION]
 
-export default App;
+> ## Deprecated
+
+> Create React App was one of the key tools for getting a React project up-and-running in 2017-2021, it is now in long-term stasis and we recommend that you migrate to one of React frameworks documented on [Start a New React Project](https://react.dev/learn/start-a-new-react-project).
+
+> If you are following a tutorial to learn React, there is still value in continuing your tutorial, but we do not recommend starting production apps based on Create React App.
+
+<img alt="Logo" align="right" src="https://create-react-app.dev/img/logo.svg" width="20%" />
