@@ -1,0 +1,305 @@
+# Instincts generated from https://github.com/Taiseer22/sturdy-octo-guide
+# Generated: 2026-06-14T11:43:27.339Z
+# Version: 2.0
+# NOTE: This file supplements (does not replace) any existing curated instincts.
+# High-confidence manually curated instincts should be preserved alongside these.
+
+---
+id: sturdy-octo-guide-commit-length
+trigger: "when writing a commit message"
+confidence: 0.6
+domain: git
+source: repo-analysis
+source_repo: https://github.com/Taiseer22/sturdy-octo-guide
+---
+
+# Sturdy Octo Guide Commit Length
+
+## Action
+
+Write moderate-length commit messages (~53 characters)
+
+## Evidence
+
+- Average commit message length: 53 chars
+- Based on 6 commits
+
+---
+id: sturdy-octo-guide-naming-files
+trigger: "when creating a new file"
+confidence: 0.8
+domain: code-style
+source: repo-analysis
+source_repo: https://github.com/Taiseer22/sturdy-octo-guide
+---
+
+# Sturdy Octo Guide Naming Files
+
+## Action
+
+Use camelCase naming convention
+
+## Evidence
+
+- Analyzed file naming patterns in repository
+- Dominant pattern: camelCase
+
+---
+id: sturdy-octo-guide-export-style
+trigger: "when exporting from a module"
+confidence: 0.7
+domain: code-style
+source: repo-analysis
+source_repo: https://github.com/Taiseer22/sturdy-octo-guide
+---
+
+# Sturdy Octo Guide Export Style
+
+## Action
+
+Prefer named exports
+
+## Evidence
+
+- Export pattern analysis
+- Dominant style: named
+
+---
+id: sturdy-octo-guide-arch-feature-based
+trigger: "when adding a new feature"
+confidence: 0.85
+domain: architecture
+source: repo-analysis
+source_repo: https://github.com/Taiseer22/sturdy-octo-guide
+---
+
+# Sturdy Octo Guide Arch Feature Based
+
+## Action
+
+Create a new folder in src/features/ with all related code colocated
+
+## Evidence
+
+- Feature-based module organization detected
+- Structure: src/features/[feature-name]/
+
+---
+id: sturdy-octo-guide-workflow-apply-upstream-pr-changes
+trigger: "when doing apply upstream pr changes"
+confidence: 0.8
+domain: workflow
+source: repo-analysis
+source_repo: https://github.com/Taiseer22/sturdy-octo-guide
+---
+
+# Sturdy Octo Guide Workflow Apply Upstream Pr Changes
+
+## Action
+
+Follow the apply-upstream-pr-changes workflow:
+1. Identify relevant upstream pull requests.
+2. Select full patch files to apply.
+3. Apply patches to the repository, updating affected files (e.g., workflows, documentation, test files, source code).
+4. Commit the changes with a standard message.
+
+## Evidence
+
+- Workflow detected from commit patterns
+- Frequency: ~6x per month
+- Files: .github/workflows/build-and-test.yml, .github/workflows/e2e-base.yml, .github/workflows/lint.yml
+
+---
+id: sturdy-octo-guide-instinct-camelcase-files
+trigger: "When creating or renaming a file in the repository"
+confidence: 0.8
+domain: code-style
+source: repo-analysis
+source_repo: Taiseer22/sturdy-octo-guide
+---
+
+# Sturdy Octo Guide Instinct Camelcase Files
+
+## Action
+
+Name the file using camelCase convention
+
+## Evidence
+
+- Pattern in namingConventions.files: camelCase
+
+---
+id: sturdy-octo-guide-instinct-camelcase-functions
+trigger: "When defining a new function"
+confidence: 0.8
+domain: code-style
+source: repo-analysis
+source_repo: Taiseer22/sturdy-octo-guide
+---
+
+# Sturdy Octo Guide Instinct Camelcase Functions
+
+## Action
+
+Name the function using camelCase convention
+
+## Evidence
+
+- Pattern in namingConventions.functions: camelCase
+
+---
+id: sturdy-octo-guide-instinct-pascalcase-classes
+trigger: "When defining a new class"
+confidence: 0.8
+domain: code-style
+source: repo-analysis
+source_repo: Taiseer22/sturdy-octo-guide
+---
+
+# Sturdy Octo Guide Instinct Pascalcase Classes
+
+## Action
+
+Name the class using PascalCase convention
+
+## Evidence
+
+- Pattern in namingConventions.classes: PascalCase
+
+---
+id: sturdy-octo-guide-instinct-screaming-constants
+trigger: "When defining a constant"
+confidence: 0.8
+domain: code-style
+source: repo-analysis
+source_repo: Taiseer22/sturdy-octo-guide
+---
+
+# Sturdy Octo Guide Instinct Screaming Constants
+
+## Action
+
+Name the constant using SCREAMING_SNAKE_CASE convention
+
+## Evidence
+
+- Pattern in namingConventions.constants: SCREAMING_SNAKE_CASE
+
+---
+id: sturdy-octo-guide-instinct-mixed-import-style
+trigger: "When importing modules in JavaScript files"
+confidence: 0.6
+domain: code-style
+source: repo-analysis
+source_repo: Taiseer22/sturdy-octo-guide
+---
+
+# Sturdy Octo Guide Instinct Mixed Import Style
+
+## Action
+
+Use mixed import styles as seen in the repository
+
+## Evidence
+
+- Pattern in importStyle: mixed
+
+---
+id: sturdy-octo-guide-instinct-named-exports
+trigger: "When exporting modules or functions"
+confidence: 0.7
+domain: code-style
+source: repo-analysis
+source_repo: Taiseer22/sturdy-octo-guide
+---
+
+# Sturdy Octo Guide Instinct Named Exports
+
+## Action
+
+Use named exports
+
+## Evidence
+
+- Pattern in exportStyle: named
+
+---
+id: sturdy-octo-guide-instinct-mixed-test-location
+trigger: "When adding new tests"
+confidence: 0.7
+domain: testing
+source: repo-analysis
+source_repo: Taiseer22/sturdy-octo-guide
+---
+
+# Sturdy Octo Guide Instinct Mixed Test Location
+
+## Action
+
+Place test files in a mixed location (not strictly separated from source files)
+
+## Evidence
+
+- Pattern in architecture.folderStructure.testLocation: mixed
+- Test files like packages/react-scripts/fixtures/kitchensink/template/src/features/webpack/CssInclusion.test.js
+
+---
+id: sturdy-octo-guide-instinct-feature-based-test-placement
+trigger: "When creating tests for a feature"
+confidence: 0.7
+domain: testing
+source: repo-analysis
+source_repo: Taiseer22/sturdy-octo-guide
+---
+
+# Sturdy Octo Guide Instinct Feature Based Test Placement
+
+## Action
+
+Place the test file alongside the feature's source code within the same folder
+
+## Evidence
+
+- Test files located in feature folders, e.g., packages/react-scripts/fixtures/kitchensink/template/src/features/webpack/
+
+---
+id: sturdy-octo-guide-instinct-commit-freeform
+trigger: "When making a commit"
+confidence: 0.8
+domain: git
+source: repo-analysis
+source_repo: Taiseer22/sturdy-octo-guide
+---
+
+# Sturdy Octo Guide Instinct Commit Freeform
+
+## Action
+
+Write a freeform commit message without a strict prefix, typically around 53 characters
+
+## Evidence
+
+- Pattern in commits.type: freeform
+- Example: 'Apply upstream PR changes (selected full patch files)'
+
+---
+id: sturdy-octo-guide-instinct-apply-upstream-pr-workflow
+trigger: "When someone wants to incorporate updates or fixes from upstream PRs into the current codebase"
+confidence: 0.95
+domain: workflow
+source: repo-analysis
+source_repo: Taiseer22/sturdy-octo-guide
+---
+
+# Sturdy Octo Guide Instinct Apply Upstream Pr Workflow
+
+## Action
+
+Run the 'apply-upstream-pr-changes' workflow: identify relevant upstream PRs, select full patch files, apply patches, and commit with a standard message
+
+## Evidence
+
+- Workflow definition: apply-upstream-pr-changes
+- Files: .github/workflows/build-and-test.yml, README.md, etc.
+- Commit sequence in workflow
+
